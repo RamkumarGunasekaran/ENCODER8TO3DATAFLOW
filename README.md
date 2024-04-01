@@ -48,16 +48,18 @@ Figure 02  Encoder 8 * 3
 module EX05(din, a, b, c); 
 input [0:7] din; 
 output a,b,c; 
-assign a=din[4] | din[5] | din[6] | din[7]; 
-assign b=din[2] | din[3] | din[6] | din[7];
-assign c=din[1] | din[3] | din[5] | din[7];
+assign a= (din[4] | din[5] | din[6] | din[7]); 
+assign b= (din[2] | din[3] | din[6] | din[7]);
+assign c= (din[1] | din[3] | din[5] | din[7]);
 endmodule
+
 ```
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 ![Screenshot 2024-04-01 091324](https://github.com/RamkumarGunasekaran/ENCODER8TO3DATAFLOW/assets/144870820/b3e43396-542a-4372-8740-01da69e40b71)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![Screenshot 2024-04-01 155440](https://github.com/RamkumarGunasekaran/ENCODER8TO3DATAFLOW/assets/144870820/7973de96-bde4-4b74-afc3-a51a3f5b5dee)
 
 **RESULTS**
 
